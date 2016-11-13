@@ -1,0 +1,48 @@
+.contacts{
+	float: right;
+	margin-top: 20px;
+	color: @dark-blue;
+}
+
+.phone-number{
+	color: @dark-blue;
+}
+
+.phone-number_huge-font{
+	font-weight: bold;
+	color: @orange;
+}
+
+@media screen and (min-width: @min-width-big){
+	.contacts{
+		float: right;
+		text-align: right;
+		margin-top: 20px;
+		margin-right: 50px;
+		width: 235px;
+		font-size: 20px;
+		color: #002a72;
+	}
+
+	.phone-number{
+		color: #002a72;
+	}
+
+	.phone-number_huge-font{
+		font-size: 40px;
+		font-weight: bold;
+		color: #fb9f18;
+	}
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @min-width-normal){
+    .contacts{
+		display: none;
+	}
+}
+
+@media screen and (max-width: @max-width-lesser){
+   .contacts{
+		display: none;
+	}
+}

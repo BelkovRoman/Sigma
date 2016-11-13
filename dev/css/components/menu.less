@@ -1,0 +1,35 @@
+.menu{
+	font-size: @average-font;
+}
+
+.menu__category-list{
+	line-height: 25px;
+}
+
+.menu__category{
+	margin-bottom: 10px;
+	
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.menu__link{
+	color: @blue;
+}
+
+
+@media screen and (min-width: @min-width-big){
+	.menu__icon{
+		display: none;
+	}
+	
+	.menu__item{
+		display: inline-block;
+		margin-left: 20px;
+		
+		&:first-child{
+			margin-left: 0px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	font-size: @normal-font;
+	font-family: @main-font-style;
+}
+
+body{
+	color: @black;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*Подключаем переменные и миксины(цвета для шрифтов, размеры шрифтов и стили, цвета задних фонов и путь до спрайта)*/
+@import "settings";
+
+/*Подключаем компоненты верстки(корзина, контакты, лого, все меню на сайте, пагинацию, продукты, строку поиска)*/
+@import "components/basket.less";
+@import "components/contacts.less";
+@import "components/logo.less";
+@import "components/menu.less";
+@import "components/pagination.less";
+@import "components/product.less";
+@import "components/side-panel.less";
+@import "components/top-panel.less";
+@import "components/bottom-panel.less";
+@import "components/services.less";
+@import "components/hamburger.less";
+
+/*Подключаем вспомогательный элемент, убирающий последствия от "float"*/
+@import "helpers/clearfix.less";
+
+/*Подключаем основную разметку сайта(шапка сайта, футер и сама страница)*/
+@import "layout/footer.less";
+@import "layout/header.less";
+@import "layout/page.less";
+
+/*Подключаем всю типографику(для ссылок, заголовков, общие стили и иконки)*/
+@import "typographics/link.less";
+@import "typographics/title.less";
+@import "typographics/icons.less";

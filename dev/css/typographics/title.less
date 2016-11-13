@@ -1,0 +1,22 @@
+.title{
+	font-size: @large-font;
+	font-weight: bold;
+	color: @dark-blue;
+}
+
+.main-title{
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @min-width-normal){
+	.main-title{
+		text-align: center;
+	}
+}
+	
+@media screen and (max-width: @max-width-lesser){
+	.main-title{
+		text-align: center;
+		font-size: @large-font;
+	}
+}

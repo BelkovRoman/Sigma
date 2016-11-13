@@ -1,0 +1,49 @@
+.products__pagination{
+	text-align: center;
+}
+
+.pagination__item{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 1.5rem;
+	
+	&:last-child{
+		margin-right: 0px;
+	}
+}
+
+.pagination__arrow{
+	display: block;
+    background: @sprite;
+	text-indent: -9999px;
+}
+
+.pagination__link{
+	color: @dark;
+	font-size: @big-font;
+	
+	&:hover{
+		color: #000;
+		text-decoration: underline;
+	}
+}
+
+.pagination__link_active{
+	color: #ffc500;
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @min-width-normal){
+	.pagination__link{
+		font-size: @bigger-font;
+	}
+}
+
+@media screen and (max-width: @max-width-lesser){
+	.pagination__item_hidden{
+		display: none;
+	}
+	
+	.pagination__link{
+		font-size: @bigger-font;
+	}
+}

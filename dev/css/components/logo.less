@@ -1,0 +1,35 @@
+.logo{
+	float: left;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @min-width-normal){
+    .logo-img{
+		display: none;
+	}
+	
+	.logo{
+		float: left;
+		display: block;
+		z-index: 5;
+		width: 262px;
+		height: 66px;
+		background: url(../img/decor/logo_small.png) scroll rgba(0,0,0,0);
+	}
+}
+
+@media screen and (max-width: @max-width-lesser){
+	.logo-img{
+		display: none;
+	}
+
+   .logo{
+		float: none;
+		display: block;
+		width: 262px;
+		height: 66px;
+		background: url(../img/decor/logo_small.png) scroll rgba(0,0,0,0);
+		z-index: 5;
+		margin: 0 auto 20px;
+	}
+}

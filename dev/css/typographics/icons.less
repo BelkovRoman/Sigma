@@ -1,0 +1,158 @@
+.icon{
+	display: block;
+    background: @sprite;
+}
+
+.icon-trade-equipment{
+	background-position: 0px -155px;
+	width: 69px;
+}
+
+.icon-booker{
+	background-position: 0px -206px;
+	width: 65px;
+}
+
+.icon-software{
+	background-position: -69px -155px;
+	width: 70px;
+}
+
+.icon-previous{
+	background-position: -264px -93px;
+	width: 15px;
+	height: 26px;
+}
+
+.icon-next{
+	background-position: -279px -93px;
+	width: 14px;
+	height: 26px;
+}
+
+.icon-basket{
+	background-position: -205px -155px;
+	width: 33px;
+	height: 26px;
+	opacity: 0.6;
+	transition: all 0.2s ease-in 0s;
+	
+	&:hover{
+		margin-right: 10px;
+	}
+	
+	&:active, &:focus{
+		opacity: 1;
+	}
+}
+
+.icon-logo{
+	background-position: 0px 0px;
+	width: 296px;
+	height: 75px;
+}
+
+.icon-search{
+	background-position: -264px -75px;
+	width: 22px;
+	height: 18px;
+}
+
+.icon-best-seller{
+	background-position: -80px -75px;
+}
+
+.icon-stock{
+	background-position: 0px -75px;
+}
+
+.icon-it-service{
+	margin-left: 35px;
+	background-position: -139px -152px;
+	width: 66px;
+}
+
+.icon-company{
+	margin-right: 15px;
+	background-position: -160px -80px;
+	width: 104px;
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @min-width-normal){
+	.icon-it-service{
+		margin-left: 25px;
+	}
+	
+	.icon-best-seller{
+		background-image: none;
+		background-color: #001448;
+		border-radius: 40px;
+	}
+
+	.icon-stock{
+		background-image: none;
+		background-color: #ff9600;
+		border-radius: 40px;
+	}
+}
+
+@media screen and (max-width: @max-width-lesser){
+	.icon-it-service{
+		margin-left: 25px;
+	}
+	
+	.icon-basket{
+		width: 40px;
+		height: 31px;
+		background: url("../img/icons/sprite/basket-icon.png") no-repeat scroll;
+		background-size: cover;
+	}
+	
+	.icon-previous{
+		width: 32px;
+		height: 32px;
+		background: url("../img/icons/sprite/arrow-left.svg") no-repeat scroll;
+		background-size: cover;
+		
+		opacity: 0.5;
+		transition: opacity 0.4s ease-in 0.2s;
+		
+		&:hover{
+			opacity: 1;
+		}
+		
+		&:active{
+			opacity: 0.7;
+		}
+	}
+
+	.icon-next{
+		width: 32px;
+		height: 32px;
+		background: url("../img/icons/sprite/arrow-right.svg") no-repeat scroll;
+		background-size: cover;
+		
+		opacity: 0.5;
+		transition: opacity 0.4s ease-in 0.2s;
+		
+		&:hover{
+			opacity: 1;
+		}
+		
+		&:active{
+			opacity: 0.7;
+		}
+	}
+	
+	.icon-best-seller{
+		background-image: none;
+		background-color: #001448;
+		border-radius: 40px;
+	}
+
+	.icon-stock{
+		background-image: none;
+		background-color: #ff9600;
+		border-radius: 40px;
+	}
+}

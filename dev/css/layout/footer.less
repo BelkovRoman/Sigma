@@ -1,0 +1,23 @@
+.footer{
+    min-width: 100%;
+    position: absolute;
+    bottom: 0;
+	background-color: @footer-bg;
+	padding: 20px 0px;
+}
+
+@media screen and (max-width: @max-width-normal) and (min-width: @max-width-lesser){
+	.footer{
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-size: @average-font;
+	}
+}
+
+@media screen and (max-width: @max-width-lesser){
+	.footer{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
